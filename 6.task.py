@@ -57,3 +57,49 @@ temp_list[0] = 99
 my_tuple = tuple(temp_list)
 print(my_tuple)
 
+my_set = {1, 2, 3}
+
+# Add
+my_set.add(4)
+
+# Remove
+my_set.remove(2)           # Raises error if not found
+my_set.discard(10)         # No error if not found
+
+# Membership
+print(3 in my_set)         # True
+
+# Set operations
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a.union(b))          # {1, 2, 3, 4, 5}
+print(a.intersection(b))   # {3}
+print(a.difference(b))     # {1, 2}
+
+#dictionary
+student = {
+    "name": "Alice",
+    "age": 20,
+    "grade": "A"
+}
+
+# Access
+print(student["name"])        # Alice
+print(student.get("score"))   # None (no error)
+
+# Modify
+student["age"] = 21
+student["score"] = 95
+
+# Remove
+del student["grade"]
+student.pop("score")
+
+# Keys, Values, Items
+print(student.keys())         # dict_keys(['name', 'age'])
+print(student.values())       # dict_values(['Alice', 21])
+print(student.items())        # dict_items([('name', 'Alice'), ('age', 21)])
+
+# Check
+print("name" in student)      # True
