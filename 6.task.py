@@ -40,3 +40,20 @@ print(my_list.count(2))  # Output: 2
 
 # Final list
 print(my_list)           # Output: [20, 10, 4, 3, 2, 2]
+
+#tuple
+my_tuple = (10, 20, 30, 10)
+
+# Access
+print(my_tuple[1])        # 20
+
+# Count/Index
+print(my_tuple.count(10)) # 2
+print(my_tuple.index(30)) # 2
+
+# Convert to list (to modify)
+temp_list = list(my_tuple)
+temp_list[0] = 99
+my_tuple = tuple(temp_list)
+print(my_tuple)
+
