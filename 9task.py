@@ -36,3 +36,46 @@ for i in range(1, 10, 1):
         print(i)
     else:
         continue  
+#set
+set1 = {1, 2, 3, 4}
+set2 = {5, 6}
+set3 = {7, 5, 1, 10}
+
+temp = set1.union(set2)             
+result = temp.intersection(set3)
+print(result)
+
+#list initiliaze
+i = []  
+
+for num in range(2, 120, 2):
+    i.append(num)         
+    print("Added:", num) 
+
+print("Final List:", i)   
+# list comprehension
+arr = [1, 2, 3, 4, 5, 6]
+odd = []
+even = []
+
+for i in arr:
+    if i % 2 != 0:
+        odd.append(i)
+    else:
+        even.append(i)
+
+print("Odd numbers:", odd)
+print("Even numbers:", even)
+#dictionary comprehension
+cities=["mumbai","newyork","moscow"]
+countries=["india","usa","russia"]
+z=zip(cities,countries)
+for a in (z):
+    print(a)
+d = {city: country for city, country in zip(cities, countries)}
+print(d)
+#enumerate
+fruits = ["apple", "banana", "cherry"]
+
+for index, fruit in enumerate(fruits):
+    print("Index:", index, "| Fruit:", fruit)            
